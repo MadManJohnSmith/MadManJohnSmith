@@ -7,8 +7,8 @@ automatización que no necesita que estés mirando, y el código que alguien má
 
 - **Servidores domésticos que no gastan nada.** El proyecto del que más presumo es
   [ezarr-stack](https://github.com/MadManJohnSmith/ezarr-stack): un servidor completo de
-  medios y *arr corriendo **dentro de un teléfono Android** que ya no quería usar como
-  teléfono. Chroot sobre TWRP, sin Docker y sin systemd, 7 GB de RAM, consumo eléctrico ridículo.
+  medios y *arr corriendo **dentro de un teléfono Android muerto**. Chroot sobre TWRP,
+  sin Docker y sin systemd, 7 GB de RAM, consumo eléctrico ridículo.
 - **Software de escritorio.** [Syncify](https://github.com/MadManJohnSmith/Syncify) es una
   app Tauri (Rust + Vue) para tener tu música en máxima calidad y bajo tu control:
   importar, migrar y descargar tu catálogo desde Qobuz, Tidal, Spotify, Deezer y SoundCloud.
@@ -37,13 +37,16 @@ Un par de reglas que se notan en el código:
 - **El plan de recuperación se escribe antes de necesitarlo.** Cada proyecto tiene un
   runbook con el triaje paso a paso.
 
-### Sobre por qué un teléfono
+### El teléfono ya no arranca Android, y aun así sirve
 
-El servidor corre en un Xiaomi Poco X3 Pro al que ya le quedaba poca vida como teléfono.
-Con TWRP instalado da servicio como servidor, y consume una fracción de lo que consumiría
-una máquina dedicada. La lección no es que los teléfonos sean mejores servidores, es que
-**el hardware que ya tienes, y no usas, puede convertirse en infraestructura** si lo cuidas
-con el mismo criterio que si lo hubieras comprado para eso.
+El Poco X3 Pro que hace de servidor murió de **muerte súbita**, un fallo conocido de ese
+modelo: ya no arranca el sistema operativo. Lo que sí arranca es el recovery, y ahí vive
+todo el stack. No es un experimento de laboratorio: lleva más de un año sirviendo medios
+y gestionando descargas a diario, con respaldos cifrados fuera del dispositivo.
+
+La lección no es que los teléfonos sean mejores servidores. Es que **un teléfono que ya
+no da boot puede seguir siendo un servidor, con el suficiente cuidado** — y que el plan
+de recuperación se escribe antes de necesitarlo, no después.
 
 ### Abierto a
 
