@@ -41,8 +41,8 @@ Un par de reglas que se notan en el código:
 
 El Poco X3 Pro que hace de servidor murió de **muerte súbita**, un fallo conocido de ese
 modelo: ya no arranca el sistema operativo. Lo que sí arranca es el recovery, y ahí vive
-todo el stack. No es un experimento de laboratorio: lleva más de un año sirviendo medios
-y gestionando descargas a diario, con respaldos cifrados fuera del dispositivo.
+todo el stack. No es un experimento de laboratorio: sirve medios y gestiona descargas a diario,
+con respaldos cifrados fuera del dispositivo.
 
 La lección no es que los teléfonos sean mejores servidores. Es que **un teléfono que ya
 no da boot puede seguir siendo un servidor, con el suficiente cuidado** — y que el plan
